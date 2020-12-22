@@ -1,0 +1,30 @@
+{
+  "name": "proshopnodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6",
+    "react-bootstrap": "^1.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohammedelmala/ProShopNodejs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohammedelmala/ProShopNodejs/issues"
+  },
+  "homepage": "https://github.com/mohammedelmala/ProShopNodejs#readme"
+}
